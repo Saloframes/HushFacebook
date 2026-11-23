@@ -2,6 +2,22 @@
 
 Changes in each Hushfacebook version, newest first. Versions 0.1.0 to 0.19.0 are in the [changelog archive](docs/changelog-archive.md).
 
+## Unreleased
+
+### Added
+
+* The Hush settings now come in Arabic, translated by hamedhani1998. (#549)
+* `Hide posts from people, Pages and sites` takes groups now. Put a group's name or ID on the list, or a link to the group, and posts in that group leave Home, along with friends' shares of them. Handy for a group you're still in but don't want in your feed, since Facebook keeps showing those after you unfollow. A link only works when it has the group's number in it, like facebook.com/groups/1234567890. (#550)
+* `Mark all notifications as read` sits at the top of Notifications in the Hush settings. One tap clears every unread dot in the Notifications tab. Facebook only puts its own Mark all as read in the three-dot menu there, and some accounts never get that menu. (Discussion #338)
+
+### Fixed
+
+* `Load whole reply threads` loads long reply threads all the way again. On Facebook 588 a thread stopped after its first page or so, and the View more replies button was gone too, so there was no way to read the rest. Now each page comes in by itself as you scroll down to it. (#536)
+* Switching `Tab bar while scrolling` between hiding and staying on screen no longer leaves short reels on the next start. With see-through bars or the rounded tab bar, the first reels after the switch stopped short and the next one peeked in under the tab bar until Reels was opened again. (#552)
+* With `Hide the video comment box` on, the seek bar on a video you tap in Home sits where Facebook puts it again, above the Up next bar. It had dropped to the bottom edge, under Up next and into the swipe area, which made it hard to grab. A reel from the Reels row in Home now keeps its seek bar above Up next too. Turn on `Hide Up next` as well and the reel gets that room instead, with the seek bar down near the bottom. (#552)
+* A reel you open from the Reels row in Home no longer prints its time over the caption when `Hide the video comment box`, `Hide Up next on videos` and `Keep the progress bar` are all on. The video now stops a little short of the bottom edge, which leaves the caption room above the time, and the seek bar stays well clear of the swipe area. (#552)
+* With `See-through bars` on, the tab bar is frosted again while the feed moves under it. Since 0.24.0 the blur only flashed for a moment and then left the bar plainly see-through, most of all over a playing video. (#553)
+
 ## 0.24.0 (2026-11-22)
 
 * This one moves to Facebook 588.0.0.42.55 and needs Morphe Manager 2.7.0 or newer, so update Manager and grab the new Facebook APK before you repatch. Every patch now goes in on the Android 9 and 10 build too. There's a lot new here. The next reel can play in the background, groups can keep the tab bar, and a tap on a feed video can bring up a pause button instead of opening Reels. Stories can lose their reply bar and Up next card, Facebook can go through a proxy you name (handy for VLESS), and a tablet can keep the feed in a column down the middle. On the fix side, reels fit the screen on a tablet held sideways and behind see-through bars, and `Play saved videos in a row` no longer stops on a saved post or shakes between videos. The tab bar also comes all the way back when you scroll to the top, and on Android 17 a close for using too much memory leaves a crash file and counts toward safe mode.
