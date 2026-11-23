@@ -310,7 +310,7 @@ The Follow button next to the reel's author. You can still follow them from thei
 Hide comment and reaction previews	隐藏评论和回应预览
 The comment Facebook previews under a reel and the bubbles of friends who reacted. Open the comments to see them all.	Facebook 在 Reels 下方预览的评论，以及回应过的好友的气泡。打开评论可查看全部。
 Hide Threads cards between reels	隐藏 Reels 之间的 Threads 卡片
-Hides the "Threads you might like" card between reels. Off by default, since it hasn't been tried on a real account yet.	隐藏 Reels 之间的“你可能喜欢的 Threads”卡片。默认关闭，因为尚未在真实账号上试过。
+Hides the "Threads you might like" card and other Meta promotions between reels. Off by default, since it hasn't been tried on a real account yet.	隐藏 Reels 之间的“你可能喜欢的 Threads”卡片和其他 Meta 推广。默认关闭，因为尚未在真实账号上试过。
 Hide post cards between reels	隐藏 Reels 之间的帖子卡片
 Hides the carousels of posts Facebook puts between reels, like "Catch up on conversations" from your groups. Off by default.	隐藏 Facebook 插在 Reels 之间的帖子轮播，比如来自你小组的“跟上对话”。默认关闭。
 Only reels from accounts I follow	只看我关注的账号的 Reels
@@ -1081,6 +1081,11 @@ Fold long posts will fold posts where Facebook does.	“折叠长帖子”将在
 Fold long posts will show %1$s before See more.	“折叠长帖子”将在“展开”前显示 %1$s.
 Fold long comments will fold comments where Facebook does.	“折叠长评论”将在 Facebook 折叠的位置折叠评论.
 Fold long comments will show %1$s before See more.	“折叠长评论”将在“展开”前显示 %1$s.
+Fold reel captions	折叠短视频说明
+Long reel captions fold where Facebook folds them.	长短视频说明在 Facebook 折叠的位置折叠.
+A long reel caption shows %1$s before more.	长短视频说明在“更多”前显示 %1$s.
+Fold reel captions will fold captions where Facebook does.	“折叠短视频说明”将在 Facebook 折叠的位置折叠说明.
+Fold reel captions will show %1$s before more.	“折叠短视频说明”将在“更多”前显示 %1$s.
 Show full reel captions	显示完整短视频说明
 Long captions on reels show all of their text right away. Tap the caption to fold it back. A change shows from the next reel.	短视频的长说明会直接显示全部文字。点按说明即可重新折叠。更改从下一个短视频开始生效。
 # context: switch title under Reels and Watch, below Show full reel captions; once a reel's caption is opened, a dark see-through box sits behind its text, like movie subtitles
@@ -2093,6 +2098,10 @@ A video you open from Saved goes on to the next one in Saved when it ends or whe
 Stay on a saved video when it ends	收藏的视频播完后停留
 # context: summary of that switch
 A saved video that ends stays on screen instead of opening the next one. Swipe up when you want the next.	收藏的视频播完后停留在屏幕上，不会打开下一个。想看下一个时向上滑动。
+# context: switch title under Play saved videos in a row; on, a saved post the row reaches stays on screen instead of being skipped, and a swipe past its end moves on
+Show saved posts in the row	在连播中显示已保存的帖子
+# context: summary of that switch
+A saved post in the row stays on screen instead of being skipped. Swipe up past its end for the next saved video, or down past its top for the one before.	连播中的已保存帖子会留在屏幕上，而不是被跳过。到帖子末尾时上滑可播放下一个已保存视频，在顶部时下滑可回到上一个。
 # context: switch title under Reels and Watch; on, Facebook stops pausing reels and videos to ask "Are you still watching?", which is Facebook's own prompt, so use the wording Facebook shows in this language
 Skip "Are you still watching?"	跳过“你还在看吗？”
 # context: summary of that switch; reels and videos go on to the next one by themselves
@@ -2413,6 +2422,10 @@ Show Comment when comments are off	评论关闭时仍显示“评论”
 Show the post date on reels	在 Reels 上显示发布日期
 Shows when a reel or a video you open full screen was posted, under the name of who posted it. A change shows from the next reel.	在发布者的名字下方显示 Reel 或全屏打开的视频是什么时候发布的。从下一个 Reel 开始生效。
 Keeps the Comment button on reels whose comments are turned off, so you can still read the ones already there. A change shows from the next reel.	在关闭了评论的 Reels 上保留“评论”按钮，让你仍能阅读已有的评论。从下一个 Reel 开始生效。
+# context: switch title under Reels; on, a long video in the Reels viewer (a film or a live replay) gets Facebook's Like, Comment, Share and Save buttons down its right side, which Facebook leaves off
+Side buttons on long videos	长视频的侧边按钮
+# context: summary of that switch; Like, Comment, Share and Save are Facebook's own button names
+Brings back Like, Comment, Share and Save down the side of a long video in the Reels viewer, where Facebook leaves them off. A change shows from the next video.	在 Reels 查看器中为长视频侧边找回赞、评论、分享和收藏按钮，Facebook 原本不显示它们。更改从下一个视频起生效。
 Select part of a post's text	选择帖子文字的一部分
 Holding a post's text opens it in a box where you can select just the part you want and copy that, or copy all of it. The hold itself copies nothing.	长按帖子文字会在一个框中打开，你可以只选择想要的部分并复制，或者全部复制。长按本身不会复制任何内容。
 Hold a feed photo to react	长按动态消息照片来发表心情
@@ -2720,6 +2733,10 @@ Hide friends' reactions on photos and videos	隐藏照片和视频上的好友�
 Takes away the friend's picture with a reaction on it that Facebook puts on a photo or video when a friend reacted. A change shows on the posts drawn after it.	去掉好友回应后 Facebook 放在照片或视频上的好友头像和回应图标。更改会在之后加载的帖子上生效。
 Hide who reacted under posts	隐藏帖子下方的回应者
 Takes away the line under a post that names who reacted, like "Name and others reacted". A change shows on the posts drawn after it.	去掉帖子下方显示谁回应了的那一行，例如“某人和其他人回应了”。更改会在之后加载的帖子上生效。
+# context: switch title under News feed; on, a post whose author turned comments off or limited who can comment keeps Facebook's Comment button, so its comments can still be read
+Show Comment on posts with comments off	在关闭评论的帖子上显示“评论”
+# context: summary of that switch; Comment is Facebook's own button name
+Keeps the Comment button on posts whose author turned comments off or limited who can comment, so you can still read the ones already there. A change shows on the posts drawn after it.	在作者关闭了评论或限制了谁能评论的帖子上保留“评论”按钮，让你仍能阅读已有的评论。更改会在之后加载的帖子上生效。
 Hide the Reels title	隐藏 Reels 标题
 Takes the word Reels off the top of the Reels tab. The buttons beside it stay.	去掉 Reels 标签页顶部的 Reels 字样。旁边的按钮保留。
 Hide Back on opened videos	隐藏已打开视频的返回按钮

@@ -1043,6 +1043,15 @@ public class Settings extends BaseSettings {
             new BooleanSetting("hushfacebook_show_reel_comment_button", FALSE);
 
     /**
+     * A long video in the Reels viewer gets Like, Comment, Share and Save down its right side, which
+     * Facebook leaves off it by presetting its side column to the three dots alone
+     * ({@link app.morphe.extension.facebook.reels.ReelDeclutter#presetButtons}, #525). Off by
+     * default. A change shows from the next video.
+     */
+    public static final BooleanSetting LONG_VIDEO_BUTTONS =
+            new BooleanSetting("hushfacebook_long_video_buttons", FALSE);
+
+    /**
      * The date a reel or full-screen video was posted shows under its author, a line Facebook
      * builds behind a server switch that's off for most accounts
      * ({@link app.morphe.extension.facebook.reels.ReelDeclutter#showsPostDate}, #296). Off by
@@ -1197,6 +1206,15 @@ public class Settings extends BaseSettings {
      */
     public static final BooleanSetting SAVED_VIDEOS_STAY_ON_END =
             new BooleanSetting("hushfacebook_saved_videos_stay_on_end", FALSE, Setting.parent(SAVED_VIDEOS_IN_ORDER));
+
+    /**
+     * A saved post the row reaches stays open instead of being skipped, and a swipe up past its end
+     * plays the next saved item, a swipe down past its top the one before
+     * ({@link app.morphe.extension.facebook.reels.SavedChain}, #404). Off by default. A change shows
+     * on the next post the row reaches.
+     */
+    public static final BooleanSetting SAVED_POSTS_IN_ROW =
+            new BooleanSetting("hushfacebook_saved_posts_in_row", FALSE, Setting.parent(SAVED_VIDEOS_IN_ORDER));
 
     /**
      * Reels and videos go on to the next one without Facebook holding it back to ask "Are you still
@@ -3569,6 +3587,15 @@ public class Settings extends BaseSettings {
             new BooleanSetting("hushfacebook_hide_reactor_names", FALSE);
 
     /**
+     * A post whose author turned comments off or limited who can comment keeps its Comment button,
+     * so the comments already there can be read
+     * ({@link app.morphe.extension.facebook.feed.PostPrompts#showsCommentButton}, #299). Off by
+     * default. A change shows on the posts drawn after it.
+     */
+    public static final BooleanSetting SHOW_POST_COMMENT_BUTTON =
+            new BooleanSetting("hushfacebook_show_post_comment_button", FALSE);
+
+    /**
      * The profile picture leaves the top of posts, and the name moves over into its space
      * ({@link app.morphe.extension.facebook.feed.ProfilePictures}, #400). Off by default. Read as each
      * post's header draws.
@@ -3663,6 +3690,14 @@ public class Settings extends BaseSettings {
      */
     public static final EnumSetting<FoldLines> FOLD_COMMENTS =
             new EnumSetting<>("hushfacebook_fold_comments", FoldLines.FACEBOOK);
+
+    /**
+     * How many lines a folded reel caption shows before more (#506), Facebook's own fold until a
+     * count is picked. Its own choice since 0.24.0 tied it to {@link #FOLD_POST_TEXT}. A change shows
+     * from the next reel.
+     */
+    public static final EnumSetting<FoldLines> FOLD_REEL_CAPTIONS =
+            new EnumSetting<>("hushfacebook_fold_reel_captions", FoldLines.FACEBOOK);
 
     /**
      * Reel captions start whole instead of cut with "more" (#398, split from

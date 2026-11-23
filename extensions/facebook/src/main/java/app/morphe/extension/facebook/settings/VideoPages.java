@@ -160,8 +160,8 @@ final class VideoPages {
                     L10n.t("The comment Facebook previews under a reel and the bubbles of friends who reacted. "
                             + "Open the comments to see them all.")));
             reels.addPreference(toggle(context, Settings.HIDE_REEL_THREADS_CARDS,
-                    L10n.t("Hides the \"Threads you might like\" card between reels. Off by default, since it hasn't "
-                            + "been tried on a real account yet.")));
+                    L10n.t("Hides the \"Threads you might like\" card and other Meta promotions between reels. Off by "
+                            + "default, since it hasn't been tried on a real account yet.")));
             reels.addPreference(toggle(context, Settings.HIDE_REEL_POST_CARDS,
                     L10n.t("Hides the carousels of posts Facebook puts between reels, like \"Catch up on "
                             + "conversations\" from your groups. Off by default.")));
@@ -246,6 +246,9 @@ final class VideoPages {
             reels.addPreference(toggle(context, Settings.SHOW_REEL_COMMENT_BUTTON,
                     L10n.t("Keeps the Comment button on reels whose comments are turned off, so you can still read "
                             + "the ones already there. A change shows from the next reel.")));
+            reels.addPreference(toggle(context, Settings.LONG_VIDEO_BUTTONS,
+                    L10n.t("Brings back Like, Comment, Share and Save down the side of a long video in the Reels "
+                            + "viewer, where Facebook leaves them off. A change shows from the next video.")));
             reels.addPreference(toggle(context, Settings.SHOW_REEL_POST_DATE,
                     L10n.t("Shows when a reel or a video you open full screen was posted, under the name of "
                             + "who posted it. A change shows from the next reel.")));
@@ -311,6 +314,10 @@ final class VideoPages {
             reels.addPreference(toggle(context, Settings.SAVED_VIDEOS_STAY_ON_END,
                     L10n.t("A saved video that ends stays on screen instead of opening the next one. Swipe up when "
                             + "you want the next.")));
+            // Asked as the row reaches each saved post (#404).
+            reels.addPreference(toggle(context, Settings.SAVED_POSTS_IN_ROW,
+                    L10n.t("A saved post in the row stays on screen instead of being skipped. Swipe up past its end "
+                            + "for the next saved video, or down past its top for the one before.")));
             // Asked before each next video, so a change shows from the next one (#427).
             reels.addPreference(toggle(context, Settings.SKIP_STILL_WATCHING,
                     L10n.t("Reels and videos keep going to the next one without pausing to ask if you're still "
@@ -331,6 +338,12 @@ final class VideoPages {
             reels.addPreference(toggle(context, Settings.SHOW_FULL_REEL_CAPTIONS,
                     L10n.t("Long captions on reels show all of their text right away. Tap the caption to fold it back. "
                             + "A change shows from the next reel.")));
+        }
+        // Fold long text's reel half, a list of its own since #506, read as each caption is measured.
+        if (build.contains(PatchFamily.FOLD_LONG_TEXT)) {
+            reels.addPreference(HushfacebookPreferenceFragment.foldReelCaptionsRow(context));
+        }
+        if (build.contains(PatchFamily.FULL_POST_TEXT)) {
             // Asked as each reel caption is built, so a change shows on the next caption (#419).
             if (captionBackdropInBuild()) {
                 reels.addPreference(toggle(context, Settings.DIM_OPEN_REEL_CAPTIONS,

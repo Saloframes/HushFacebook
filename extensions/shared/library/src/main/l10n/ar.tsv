@@ -126,6 +126,10 @@ A reel's Download button, the Download button under a post and a video's Downloa
 A reel's More menu gets Copy caption, which copies the whole caption, even the part behind See more.	قائمة المزيد في الريل تحصل على نسخ الوصف، الذي ينسخ الوصف كاملًا، حتى الجزء الذي وراء عرض المزيد.
 A reel's progress bar stays full size, ready to drag. A full-screen video's controls stay until you tap.	شريط تقدم الريل يبقى بحجمه الكامل، جاهزًا للسحب. أدوات الفيديو بملء الشاشة تبقى حتى تنقر.
 A saved video that ends stays on screen instead of opening the next one. Swipe up when you want the next.	فيديو محفوظ ينتهي يبقى على الشاشة بدلًا من فتح التالي. اسحب لأعلى عندما تريد التالي.
+# context: switch title under Play saved videos in a row; on, a saved post the row reaches stays on screen instead of being skipped, and a swipe past its end moves on
+Show saved posts in the row	إظهار المنشورات المحفوظة في التتابع
+# context: summary of that switch
+A saved post in the row stays on screen instead of being skipped. Swipe up past its end for the next saved video, or down past its top for the one before.	يبقى المنشور المحفوظ في التتابع على الشاشة بدلًا من تخطيه. اسحب لأعلى بعد نهايته للفيديو المحفوظ التالي، أو لأسفل بعد أعلاه للسابق.
 A small label at the top of Reels shows the minutes you've watched. Time on other tabs doesn't count, and 15 minutes away starts it over.	ملصق صغير في أعلى ريلز يعرض الدقائق التي شاهدتها. الوقت في التبويبات الأخرى لا يُحسب، و15 دقيقة بعيدًا تبدأ العدّ من جديد.
 A song you add to a photo for your Story plays for up to 30 seconds instead of 15. Applies to the next song you pick.	أغنية تضيفها إلى صورة لقصتك تُعرض حتى 30 ثانية بدلًا من 15. تُطبَّق على الأغنية التالية التي تختارها.
 A story you scrolled past in the Stories tray leaves it the next time you open Facebook, even if you didn't watch it. A new story brings that person back.	قصة تجاوزتها في درج القصص تتركه في المرة التالية التي تفتح فيها فيسبوك، حتى لو لم تشاهدها. قصة جديدة تُعيد ذلك الشخص.
@@ -592,6 +596,11 @@ Fixes saved videos that play without sound in WhatsApp, video editors such as Ca
 Fold long comments	طي التعليقات الطويلة
 Fold long comments will fold comments where Facebook does.	طي التعليقات الطويلة سيطوي التعليقات حيث يطويها فيسبوك.
 Fold long comments will show %1$s before See more.	طي التعليقات الطويلة سيُظهر %1$s قبل عرض المزيد.
+Fold reel captions	طي أوصاف الريل
+Long reel captions fold where Facebook folds them.	أوصاف الريل الطويلة تُطوى حيث يطويها فيسبوك.
+A long reel caption shows %1$s before more.	وصف الريل الطويل يعرض %1$s قبل المزيد.
+Fold reel captions will fold captions where Facebook does.	طي أوصاف الريل سيطوي الأوصاف حيث يطويها فيسبوك.
+Fold reel captions will show %1$s before more.	طي أوصاف الريل سيُظهر %1$s قبل المزيد.
 Fold long posts	طي المنشورات الطويلة
 Fold long posts will fold posts where Facebook does.	طي المنشورات الطويلة سيطوي المنشورات حيث يطويها فيسبوك.
 Fold long posts will show %1$s before See more.	طي المنشورات الطويلة سيُظهر %1$s قبل عرض المزيد.
@@ -883,7 +892,7 @@ Hides the "Commission eligible" label under the creator's name on reels.	يخف�
 Hides the "Follow" link next to the name on posts from Pages and people you don't follow. Tapping the name still opens the profile. A change shows on the posts drawn after it.	يخفي رابط المتابعة بجانب الاسم على منشورات الصفحات والأشخاص الذين لا تتابعهم. النقر على الاسم ما زال يفتح الملف الشخصي. يظهر التغيير على المنشورات المرسومة بعده.
 Hides the "Related posts" list Facebook adds under some posts, with its titles written by Meta AI. The post and its comments stay.	يخفي قائمة المنشورات ذات الصلة التي يضيفها فيسبوك تحت بعض المنشورات، وعناوينها المكتوبة بواسطة Meta AI. المنشور وتعليقاته يبقون.
 Hides the "Subscribe" link next to a creator's name on posts and videos. Tapping the name still opens the profile. A change shows on the posts drawn after it.	يخفي رابط الاشتراك بجانب اسم ناشر على المنشورات والفيديوهات. النقر على الاسم ما زال يفتح الملف الشخصي. يظهر التغيير على المنشورات المرسومة بعده.
-Hides the "Threads you might like" card between reels. Off by default, since it hasn't been tried on a real account yet.	يخفي بطاقة سلاسل قد تعجبك بين الريلز. متوقف افتراضيًا، لأنه لم يُجرَّب على حساب حقيقي بعد.
+Hides the "Threads you might like" card and other Meta promotions between reels. Off by default, since it hasn't been tried on a real account yet.	يخفي بطاقة سلاسل قد تعجبك وعروض Meta الترويجية الأخرى بين الريلز. متوقف افتراضيًا، لأنه لم يُجرَّب على حساب حقيقي بعد.
 Hides the "Want to see more posts from friends?" card with its Find friends button where your friends' posts run out.	يخفي بطاقة هل تريد رؤية منشورات أكثر من الأصدقاء؟ مع زر العثور على الأصدقاء حيث تنتهي منشورات أصدقائك.
 Hides the "What's on your mind?" row at the top of Home. The create button in the top bar still starts a post.	يخفي صف ماذا يدور في ذهنك؟ في أعلى الرئيسية. زر الإنشاء في الشريط العلوي ما زال يبدأ منشورًا.
 Hides the banners at the top of Chats, like the one asking you to turn on notifications.	يخفي الشرائط في أعلى المحادثات، مثل التي تطلب منك تشغيل الإشعارات.
@@ -1027,6 +1036,10 @@ Keep watched entries for	الاحتفاظ بالسجلات المشاهدة لم
 Keeps a list on this phone of the reels, videos and stories you watch, so you can find one again after the feed refreshes. Nothing leaves your phone.	يُبقي قائمة على هاتفك بالريلز والفيديوهات والقصص التي تشاهدها، حتى تتمكن من العثور على واحدة منها مرة أخرى بعد تحديث الخلاصة. لا شيء يغادر هاتفك.
 Keeps Facebook dark no matter its own setting. Meant for tablets where Facebook has no Dark mode switch. Restart Facebook to see the change.	يُبقي فيسبوك داكنًا مهما كان إعداده الخاص. مخصص للأجهزة اللوحية حيث لا يوجد زر الوضع الداكن في فيسبوك. أعد تشغيل فيسبوك لترى التغيير.
 Keeps the Comment button on reels whose comments are turned off, so you can still read the ones already there. A change shows from the next reel.	يُبقي زر التعليق على الريل التي تم إيقاف تعليقاتها، حتى تتمكن من قراءة الموجود بالفعل. يظهر التغيير من الريل التالي.
+# context: switch title under Reels; on, a long video in the Reels viewer (a film or a live replay) gets Facebook's Like, Comment, Share and Save buttons down its right side, which Facebook leaves off
+Side buttons on long videos	أزرار جانبية للفيديوهات الطويلة
+# context: summary of that switch; Like, Comment, Share and Save are Facebook's own button names
+Brings back Like, Comment, Share and Save down the side of a long video in the Reels viewer, where Facebook leaves them off. A change shows from the next video.	يعيد أزرار الإعجاب والتعليق والمشاركة والحفظ على جانب الفيديو الطويل في عارض Reels، حيث يحذفها فيسبوك. يظهر التغيير من الفيديو التالي.
 Keeps the Messenger button but drops the unread count on it.	يُبقي زر Messenger ولكنه يزيل العدّاد غير المقروء عليه.
 Kept: %s	محفوظ: %s
 Languages to keep	اللغات المطلوب الاحتفاظ بها
@@ -1705,6 +1718,10 @@ Takes away Send to group when you pick two or more people, and the share sheet's
 Takes away the friend's picture with a reaction on it that Facebook puts on a photo or video when a friend reacted. A change shows on the posts drawn after it.	يزيل صورة الصديق مع تفاعل عليها التي يضعها فيسبوك على صورة أو فيديو عندما تفاعل صديق. يظهر التغيير على المنشورات المرسومة بعده.
 Takes away the line that says someone is typing a comment. Your own typing is a separate switch under Privacy.	يزيل السطر الذي يقول أن شخصًا ما يكتب تعليقًا. كتابتك الخاصة هي مفتاح منفصل تحت الخصوصية.
 Takes away the line under a post that names who reacted, like "Name and others reacted". A change shows on the posts drawn after it.	يزيل السطر تحت المنشور الذي يسمّي من تفاعل، مثل "اسم وآخرون تفاعلوا". يظهر التغيير على المنشورات المرسومة بعده.
+# context: switch title under News feed; on, a post whose author turned comments off or limited who can comment keeps Facebook's Comment button, so its comments can still be read
+Show Comment on posts with comments off	إظهار تعليق على المنشورات المتوقفة تعليقاتها
+# context: summary of that switch; Comment is Facebook's own button name
+Keeps the Comment button on posts whose author turned comments off or limited who can comment, so you can still read the ones already there. A change shows on the posts drawn after it.	يُبقي زر التعليق على المنشورات التي أوقف صاحبها التعليقات أو حدّد من يمكنه التعليق، حتى تتمكن من قراءة الموجود بالفعل. يظهر التغيير على المنشورات المرسومة بعده.
 Takes Like off the row under comments. Reply and the reaction count stay.	يزيل الإعجاب من الصف تحت التعليقات. الرد وعدد التفاعل يبقون.
 Takes out the cards between stories that ask you to make one, including the full screen card that asks you to continue the story with photos from your gallery. Applies the next time you open stories.	يزيل البطاقات بين القصص التي تطلب منك عمل واحدة، بما في ذلك بطاقة ملء الشاشة التي تطلب منك مواصلة القصة بصور من معرضك. يُطبّق في المرة التالية التي تفتح فيها القصص.
 Takes out the empty band some phones show above a listing's top row, like Pixels on Android 17.	يزيل النطاق الفارغ الذي تظهره بعض الهواتف فوق الصف العلوي من الإعلان، مثل Pixels على أندرويد 17.

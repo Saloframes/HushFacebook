@@ -303,7 +303,7 @@ The Follow button next to the reel's author. You can still follow them from thei
 Hide comment and reaction previews	Ocultar prévias de comentários e reações
 The comment Facebook previews under a reel and the bubbles of friends who reacted. Open the comments to see them all.	O comentário que o Facebook mostra como prévia abaixo de um Reel e as bolhas dos amigos que reagiram. Abra os comentários para ver todos.
 Hide Threads cards between reels	Ocultar cartões do Threads entre os reels
-Hides the "Threads you might like" card between reels. Off by default, since it hasn't been tried on a real account yet.	Oculta o cartão “Threads que você talvez curta” entre os reels. Desligado por padrão, porque ainda não foi testado em uma conta real.
+Hides the "Threads you might like" card and other Meta promotions between reels. Off by default, since it hasn't been tried on a real account yet.	Oculta o cartão “Threads que você talvez curta” e outras promoções da Meta entre os reels. Desligado por padrão, porque ainda não foi testado em uma conta real.
 Hide post cards between reels	Ocultar cartões de publicações entre os reels
 Hides the carousels of posts Facebook puts between reels, like "Catch up on conversations" from your groups. Off by default.	Oculta os carrosséis de publicações que o Facebook coloca entre os reels, como “Fique por dentro das conversas” dos seus grupos. Desligado por padrão.
 Only reels from accounts I follow	Só reels de contas que eu sigo
@@ -970,6 +970,11 @@ Fold long posts will fold posts where Facebook does.	Recolher publicações long
 Fold long posts will show %1$s before See more.	Recolher publicações longas vai mostrar %1$s antes de Ver mais.
 Fold long comments will fold comments where Facebook does.	Recolher comentários longos vai recolher os comentários onde o Facebook recolhe.
 Fold long comments will show %1$s before See more.	Recolher comentários longos vai mostrar %1$s antes de Ver mais.
+Fold reel captions	Recolher legendas dos reels
+Long reel captions fold where Facebook folds them.	Legendas longas de reels são recolhidas onde o Facebook as recolhe.
+A long reel caption shows %1$s before more.	Uma legenda longa de reel mostra %1$s antes de mais.
+Fold reel captions will fold captions where Facebook does.	Recolher legendas dos reels vai recolher as legendas onde o Facebook recolhe.
+Fold reel captions will show %1$s before more.	Recolher legendas dos reels vai mostrar %1$s antes de mais.
 Show full reel captions	Mostrar a legenda completa dos reels
 Long captions on reels show all of their text right away. Tap the caption to fold it back. A change shows from the next reel.	Legendas longas dos reels mostram todo o texto logo de cara. Toque na legenda para recolhê-la de novo. A mudança vale a partir do próximo reel.
 # context: switch title under Reels and Watch, below Show full reel captions; once a reel's caption is opened, a dark see-through box sits behind its text, like movie subtitles
@@ -1984,6 +1989,10 @@ A video you open from Saved goes on to the next one in Saved when it ends or whe
 Stay on a saved video when it ends	Ficar no vídeo salvo quando ele terminar
 # context: summary of that switch
 A saved video that ends stays on screen instead of opening the next one. Swipe up when you want the next.	Um vídeo salvo que termina fica na tela em vez de abrir o próximo. Deslize para cima quando quiser o próximo.
+# context: switch title under Play saved videos in a row; on, a saved post the row reaches stays on screen instead of being skipped, and a swipe past its end moves on
+Show saved posts in the row	Mostrar publicações salvas na sequência
+# context: summary of that switch
+A saved post in the row stays on screen instead of being skipped. Swipe up past its end for the next saved video, or down past its top for the one before.	Uma publicação salva na sequência fica na tela em vez de ser pulada. Deslize para cima no fim dela para o próximo vídeo salvo, ou para baixo no topo para o anterior.
 # context: switch title under Reels and Watch; on, Facebook stops pausing reels and videos to ask "Are you still watching?", which is Facebook's own prompt, so use the wording Facebook shows in this language
 Skip "Are you still watching?"	Pular "Você ainda está assistindo?"
 # context: summary of that switch; reels and videos go on to the next one by themselves
@@ -2304,6 +2313,10 @@ Show Comment when comments are off	Mostrar Comentar quando os comentários estã
 Show the post date on reels	Mostrar a data da publicação nos reels
 Shows when a reel or a video you open full screen was posted, under the name of who posted it. A change shows from the next reel.	Mostra quando um reel ou um vídeo que você abre em tela cheia foi publicado, abaixo do nome de quem publicou. A mudança aparece a partir do próximo reel.
 Keeps the Comment button on reels whose comments are turned off, so you can still read the ones already there. A change shows from the next reel.	Mantém o botão Comentar nos reels com comentários desativados, para você ainda ler os que já estão lá. A mudança aparece a partir do próximo reel.
+# context: switch title under Reels; on, a long video in the Reels viewer (a film or a live replay) gets Facebook's Like, Comment, Share and Save buttons down its right side, which Facebook leaves off
+Side buttons on long videos	Botões laterais em vídeos longos
+# context: summary of that switch; Like, Comment, Share and Save are Facebook's own button names
+Brings back Like, Comment, Share and Save down the side of a long video in the Reels viewer, where Facebook leaves them off. A change shows from the next video.	Traz de volta Curtir, Comentar, Compartilhar e Salvar na lateral de um vídeo longo no visualizador de Reels, onde o Facebook os deixa de fora. A mudança aparece a partir do próximo vídeo.
 Select part of a post's text	Selecionar parte do texto de uma publicação
 Holding a post's text opens it in a box where you can select just the part you want and copy that, or copy all of it. The hold itself copies nothing.	Segurar o texto de uma publicação abre o texto em uma caixa onde você pode selecionar só a parte que quiser e copiá-la, ou copiar tudo. Segurar sozinho não copia nada.
 Hold a feed photo to react	Segurar uma foto do feed para reagir
@@ -2611,6 +2624,10 @@ Hide friends' reactions on photos and videos	Ocultar reações de amigos em foto
 Takes away the friend's picture with a reaction on it that Facebook puts on a photo or video when a friend reacted. A change shows on the posts drawn after it.	Tira a foto do amigo com a reação dele que o Facebook coloca sobre uma foto ou um vídeo quando um amigo reagiu. A mudança aparece nas publicações carregadas depois dela.
 Hide who reacted under posts	Ocultar quem reagiu nas publicações
 Takes away the line under a post that names who reacted, like "Name and others reacted". A change shows on the posts drawn after it.	Tira a linha embaixo de uma publicação que diz quem reagiu, como "Nome e outras pessoas reagiram". A mudança aparece nas publicações carregadas depois dela.
+# context: switch title under News feed; on, a post whose author turned comments off or limited who can comment keeps Facebook's Comment button, so its comments can still be read
+Show Comment on posts with comments off	Mostrar Comentar em publicações com comentários desativados
+# context: summary of that switch; Comment is Facebook's own button name
+Keeps the Comment button on posts whose author turned comments off or limited who can comment, so you can still read the ones already there. A change shows on the posts drawn after it.	Mantém o botão Comentar nas publicações em que o autor desativou os comentários ou limitou quem pode comentar, para você ainda ler os que já estão lá. A mudança aparece nas publicações carregadas depois dela.
 Hide the Reels title	Ocultar o título Reels
 Takes the word Reels off the top of the Reels tab. The buttons beside it stay.	Tira a palavra Reels do topo da aba Reels. Os botões ao lado ficam.
 Hide Back on opened videos	Ocultar Voltar nos vídeos abertos

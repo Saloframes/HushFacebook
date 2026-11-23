@@ -310,7 +310,7 @@ The Follow button next to the reel's author. You can still follow them from thei
 Hide comment and reaction previews	Ẩn bản xem trước bình luận và cảm xúc
 The comment Facebook previews under a reel and the bubbles of friends who reacted. Open the comments to see them all.	Bình luận Facebook xem trước dưới reel và bong bóng của bạn bè đã bày tỏ cảm xúc. Mở phần bình luận để xem tất cả.
 Hide Threads cards between reels	Ẩn thẻ Threads giữa các reel
-Hides the "Threads you might like" card between reels. Off by default, since it hasn't been tried on a real account yet.	Ẩn thẻ "Threads bạn có thể thích" giữa các reel. Mặc định tắt vì chưa được thử trên tài khoản thật.
+Hides the "Threads you might like" card and other Meta promotions between reels. Off by default, since it hasn't been tried on a real account yet.	Ẩn thẻ "Threads bạn có thể thích" và các quảng bá khác của Meta giữa các reel. Mặc định tắt vì chưa được thử trên tài khoản thật.
 Hide post cards between reels	Ẩn thẻ bài viết giữa các reel
 Hides the carousels of posts Facebook puts between reels, like "Catch up on conversations" from your groups. Off by default.	Ẩn các dải bài viết Facebook chèn giữa các reel, như "Bắt kịp các cuộc trò chuyện" từ nhóm của bạn. Mặc định tắt.
 Only reels from accounts I follow	Chỉ reel từ tài khoản tôi theo dõi
@@ -1084,6 +1084,11 @@ Fold long posts will fold posts where Facebook does.	Thu gọn bài viết dài 
 Fold long posts will show %1$s before See more.	Thu gọn bài viết dài sẽ hiện %1$s trước Xem thêm.
 Fold long comments will fold comments where Facebook does.	Thu gọn bình luận dài sẽ thu gọn bình luận ở chỗ Facebook thu gọn.
 Fold long comments will show %1$s before See more.	Thu gọn bình luận dài sẽ hiện %1$s trước Xem thêm.
+Fold reel captions	Thu gọn chú thích thước phim
+Long reel captions fold where Facebook folds them.	Chú thích thước phim dài được thu gọn ở chỗ Facebook thu gọn.
+A long reel caption shows %1$s before more.	Chú thích thước phim dài hiện %1$s trước Xem thêm.
+Fold reel captions will fold captions where Facebook does.	Thu gọn chú thích thước phim sẽ thu gọn chú thích ở chỗ Facebook thu gọn.
+Fold reel captions will show %1$s before more.	Thu gọn chú thích thước phim sẽ hiện %1$s trước Xem thêm.
 Show full reel captions	Hiện toàn bộ chú thích thước phim
 Long captions on reels show all of their text right away. Tap the caption to fold it back. A change shows from the next reel.	Chú thích dài của thước phim hiện toàn bộ nội dung ngay từ đầu. Nhấn vào chú thích để thu gọn lại. Thay đổi áp dụng từ thước phim tiếp theo.
 # context: switch title under Reels and Watch, below Show full reel captions; once a reel's caption is opened, a dark see-through box sits behind its text, like movie subtitles
@@ -2098,6 +2103,10 @@ A video you open from Saved goes on to the next one in Saved when it ends or whe
 Stay on a saved video when it ends	Ở lại video đã lưu khi phát xong
 # context: summary of that switch
 A saved video that ends stays on screen instead of opening the next one. Swipe up when you want the next.	Video đã lưu khi phát xong sẽ ở lại trên màn hình thay vì mở video tiếp theo. Vuốt lên khi bạn muốn xem video tiếp theo.
+# context: switch title under Play saved videos in a row; on, a saved post the row reaches stays on screen instead of being skipped, and a swipe past its end moves on
+Show saved posts in the row	Hiện bài viết đã lưu trong hàng
+# context: summary of that switch
+A saved post in the row stays on screen instead of being skipped. Swipe up past its end for the next saved video, or down past its top for the one before.	Bài viết đã lưu trong hàng sẽ ở lại trên màn hình thay vì bị bỏ qua. Vuốt lên khi đã đến cuối bài để sang video đã lưu tiếp theo, hoặc vuốt xuống khi ở đầu bài để quay lại mục trước.
 # context: switch title under Reels and Watch; on, Facebook stops pausing reels and videos to ask "Are you still watching?", which is Facebook's own prompt, so use the wording Facebook shows in this language
 Skip "Are you still watching?"	Bỏ qua "Bạn vẫn đang xem chứ?"
 # context: summary of that switch; reels and videos go on to the next one by themselves
@@ -2418,6 +2427,10 @@ Show Comment when comments are off	Hiện nút Bình luận khi bình luận b�
 Show the post date on reels	Hiện ngày đăng trên reel
 Shows when a reel or a video you open full screen was posted, under the name of who posted it. A change shows from the next reel.	Hiện thời điểm một reel hoặc video bạn mở toàn màn hình được đăng, ngay dưới tên người đăng. Thay đổi có hiệu lực từ reel tiếp theo.
 Keeps the Comment button on reels whose comments are turned off, so you can still read the ones already there. A change shows from the next reel.	Giữ nút Bình luận trên các reel đã tắt bình luận, để bạn vẫn đọc được các bình luận đã có. Thay đổi có hiệu lực từ reel tiếp theo.
+# context: switch title under Reels; on, a long video in the Reels viewer (a film or a live replay) gets Facebook's Like, Comment, Share and Save buttons down its right side, which Facebook leaves off
+Side buttons on long videos	Nút bên cạnh video dài
+# context: summary of that switch; Like, Comment, Share and Save are Facebook's own button names
+Brings back Like, Comment, Share and Save down the side of a long video in the Reels viewer, where Facebook leaves them off. A change shows from the next video.	Đưa lại Thích, Bình luận, Chia sẻ và Lưu ở cạnh video dài trong trình xem Reels, nơi Facebook bỏ chúng đi. Thay đổi có hiệu lực từ video tiếp theo.
 Select part of a post's text	Chọn một phần văn bản của bài viết
 Holding a post's text opens it in a box where you can select just the part you want and copy that, or copy all of it. The hold itself copies nothing.	Nhấn giữ văn bản của bài viết sẽ mở nó trong một hộp để bạn chọn đúng phần mình muốn và sao chép, hoặc sao chép tất cả. Chỉ nhấn giữ thì không sao chép gì.
 Hold a feed photo to react	Nhấn giữ ảnh trên bảng tin để bày tỏ cảm xúc
@@ -2725,6 +2738,10 @@ Hide friends' reactions on photos and videos	Ẩn biểu cảm của bạn bè t
 Takes away the friend's picture with a reaction on it that Facebook puts on a photo or video when a friend reacted. A change shows on the posts drawn after it.	Bỏ ảnh đại diện của bạn bè kèm biểu cảm mà Facebook đặt trên ảnh hoặc video khi một người bạn bày tỏ cảm xúc. Thay đổi hiện ở các bài viết được tải sau đó.
 Hide who reacted under posts	Ẩn người đã bày tỏ cảm xúc dưới bài viết
 Takes away the line under a post that names who reacted, like "Name and others reacted". A change shows on the posts drawn after it.	Bỏ dòng dưới bài viết cho biết ai đã bày tỏ cảm xúc, như "Tên và những người khác đã bày tỏ cảm xúc". Thay đổi hiện ở các bài viết được tải sau đó.
+# context: switch title under News feed; on, a post whose author turned comments off or limited who can comment keeps Facebook's Comment button, so its comments can still be read
+Show Comment on posts with comments off	Hiện nút Bình luận trên bài viết đã tắt bình luận
+# context: summary of that switch; Comment is Facebook's own button name
+Keeps the Comment button on posts whose author turned comments off or limited who can comment, so you can still read the ones already there. A change shows on the posts drawn after it.	Giữ nút Bình luận trên các bài viết mà người đăng đã tắt bình luận hoặc giới hạn người được bình luận, để bạn vẫn đọc được các bình luận đã có. Thay đổi hiện ở các bài viết được tải sau đó.
 Hide the Reels title	Ẩn tiêu đề Reels
 Takes the word Reels off the top of the Reels tab. The buttons beside it stay.	Bỏ chữ Reels ở đầu tab Reels. Các nút bên cạnh vẫn giữ nguyên.
 Hide Back on opened videos	Ẩn nút Quay lại trên video đã mở

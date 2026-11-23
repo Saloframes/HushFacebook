@@ -492,7 +492,8 @@ public class PatchFamilyTest {
                         + "hushfacebook_hide_reel_whatsapp_button=off, hushfacebook_hide_reel_like_button=off, "
                         + "hushfacebook_hide_reel_comment_button=off, hushfacebook_hide_reel_repost_button=off, "
                         + "hushfacebook_hide_reel_share_button=off, "
-                        + "hushfacebook_show_reel_comment_button=off, hushfacebook_show_reel_post_date=off, "
+                        + "hushfacebook_show_reel_comment_button=off, hushfacebook_long_video_buttons=off, "
+                        + "hushfacebook_show_reel_post_date=off, "
                         + "hushfacebook_reel_post_date_style=AGO, hushfacebook_hide_reel_new_for_you=off, "
                         + "hushfacebook_hide_reel_sound_button=off, hushfacebook_reel_speaker_above_menu=off, "
                         + "hushfacebook_hide_reel_audio_line=off, "
@@ -500,7 +501,7 @@ public class PatchFamilyTest {
                         + "hushfacebook_hide_reel_fullscreen_pill=off, hushfacebook_hide_feed_video_buttons=off, hushfacebook_feed_videos_alone=off, "
                         + "hushfacebook_shared_reels_alone=off, hushfacebook_hide_shared_reel_friend_sheet=off, hushfacebook_watch_again_in_place=off, "
                         + "hushfacebook_saved_videos_in_player=off, hushfacebook_saved_videos_in_order=off, "
-                        + "hushfacebook_saved_videos_stay_on_end=off, "
+                        + "hushfacebook_saved_videos_stay_on_end=off, hushfacebook_saved_posts_in_row=off, "
                         + "hushfacebook_skip_still_watching=off, hushfacebook_fill_reels=off, "
                         + "hushfacebook_play_feed_reels_whole=off)",
                 PatchFamily.reportLines(EnumSet.of(PatchFamily.REEL_DECLUTTER), false).get(0));
@@ -513,14 +514,17 @@ public class PatchFamilyTest {
                         + "hushfacebook_hide_share_group_buttons=on, hushfacebook_hide_share_people_row=off)",
                 PatchFamily.reportLines(EnumSet.of(PatchFamily.SHARE_SHEET_ITEMS), true).get(0));
         Settings.HIDE_SHARE_GROUP_BUTTONS.resetToDefault();
-        // Fold long text is set by its two lists, and the comments' list is saved beside the posts' (#497).
-        assertEquals("Fold long text: set by its list (hushfacebook_fold_post_text=FACEBOOK, hushfacebook_fold_comments=FACEBOOK)",
+        // Fold long text is set by its lists, and the comments' and reel captions' lists are saved beside the posts' (#497, #506).
+        assertEquals("Fold long text: set by its list (hushfacebook_fold_post_text=FACEBOOK, hushfacebook_fold_comments=FACEBOOK, "
+                        + "hushfacebook_fold_reel_captions=FACEBOOK)",
                 PatchFamily.reportLines(EnumSet.of(PatchFamily.FOLD_LONG_TEXT), false).get(0));
         Settings.FOLD_COMMENTS.save(FoldLines.TEN);
+        Settings.FOLD_REEL_CAPTIONS.save(FoldLines.TWO);
         assertEquals("Fold long text: disabled while paused (saved hushfacebook_fold_post_text=FACEBOOK, "
-                        + "hushfacebook_fold_comments=TEN)",
+                        + "hushfacebook_fold_comments=TEN, hushfacebook_fold_reel_captions=TWO)",
                 PatchFamily.reportLines(EnumSet.of(PatchFamily.FOLD_LONG_TEXT), true).get(0));
         Settings.FOLD_COMMENTS.resetToDefault();
+        Settings.FOLD_REEL_CAPTIONS.resetToDefault();
         // Video buffer is set by its list, and a pause hands the sizes back to Facebook (#526).
         assertEquals("Video buffer: set by its list (hushfacebook_video_buffer=FACEBOOK)",
                 PatchFamily.reportLines(EnumSet.of(PatchFamily.VIDEO_BUFFER), false).get(0));

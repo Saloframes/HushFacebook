@@ -8,7 +8,12 @@ Changes in each Hushfacebook version, newest first. Versions 0.1.0 to 0.19.0 are
 
 * The Hush settings now come in Arabic, translated by hamedhani1998. (#549)
 * `Hide posts from people, Pages and sites` takes groups now. Put a group's name or ID on the list, or a link to the group, and posts in that group leave Home, along with friends' shares of them. Handy for a group you're still in but don't want in your feed, since Facebook keeps showing those after you unfollow. A link only works when it has the group's number in it, like facebook.com/groups/1234567890. (#550)
+* `Show saved posts in the row` under `Play saved videos in a row` stops on a saved post instead of skipping it, so you can read it. Swipe up once you're past its end and the next saved video opens, or swipe down at its top to go back to the one before. While there's more of the post to scroll, your swipe just scrolls it. It's off until you turn it on. (#404)
 * `Mark all notifications as read` sits at the top of Notifications in the Hush settings. One tap clears every unread dot in the Notifications tab. Facebook only puts its own Mark all as read in the three-dot menu there, and some accounts never get that menu. (Discussion #338)
+* `Side buttons on long videos` under Reels and Watch puts Like, Comment, Share and Save back down the side of long videos in the Reels viewer, like a live replay or a film you open from Saved or the Reels library. Facebook only gives those the three dots. It starts off. (#525)
+* The Hush settings now go light or dark with your phone's theme, like HushGram's do. Without the `Material You theme` patch they used to stay dark on every phone. `Force dark mode` still keeps them dark. (#559)
+* The Hush settings now come in Italian and Korean too. They follow your phone's language, like the other translations. (#558)
+* `Show Comment on posts with comments off` under News feed keeps the Comment button on posts whose author turned comments off or limited who can comment, so you can still read the comments already there. It's off until you turn it on. (#299)
 
 ### Fixed
 
@@ -17,6 +22,13 @@ Changes in each Hushfacebook version, newest first. Versions 0.1.0 to 0.19.0 are
 * With `Hide the video comment box` on, the seek bar on a video you tap in Home sits where Facebook puts it again, above the Up next bar. It had dropped to the bottom edge, under Up next and into the swipe area, which made it hard to grab. A reel from the Reels row in Home now keeps its seek bar above Up next too. Turn on `Hide Up next` as well and the reel gets that room instead, with the seek bar down near the bottom. (#552)
 * A reel you open from the Reels row in Home no longer prints its time over the caption when `Hide the video comment box`, `Hide Up next on videos` and `Keep the progress bar` are all on. The video now stops a little short of the bottom edge, which leaves the caption room above the time, and the seek bar stays well clear of the swipe area. (#552)
 * With `See-through bars` on, the tab bar is frosted again while the feed moves under it. Since 0.24.0 the blur only flashed for a moment and then left the bar plainly see-through, most of all over a playing video. (#553)
+* Facebook stops draining the battery in the background when you leave it with a paused video that was still loading. Facebook's player checks on a loading video a hundred times a second, playing or not, and stops loading once you leave, so a preview it hadn't finished (most often the Reels row on Home) kept waking the phone until Android closed Facebook. Now that check runs once a second while no Facebook screen is open. A video playing in the background with `Keep playing in the background` plays on as before. (#548)
+* With `Always use Clean mode` on, a reel you take out of Clean mode no longer gets a second Clean mode button stacked on More options and the button above it, where it took their taps. The way back in is the Clean mode button down the side of the reel now, which shows whenever `Always use Clean mode` is on, even with `Clean mode button on reels` off. (#554)
+* `Fold long posts` now reaches the posts Facebook cuts after a single line, which is most photo posts and shared posts. With 3 lines picked they still showed one line and a "more". Comments Facebook cuts that short get your count too. (#506)
+* A shared post now stops at the lines you picked. Its text sits in a narrower box than the feed's, so with 3 lines picked it ran on to a 4th before the "more". (#506)
+* Reel captions have a list of their own now, `Fold reel captions` under Reels and Watch, so the count you pick in `Fold long posts` stays on posts. Since 0.24.0 a reel's caption took the posts' count. The new list starts at Facebook's choice. (#506)
+* `Show Comment when comments are off` works on Facebook 588 again. The Comment button down the side of a reel stayed hidden on reels whose author limited who can comment, even with the switch on. (#299)
+* `Hide Threads cards between reels` also takes out the Meta promos Facebook now puts between reels, which is how the Threads card started showing up again for some people. (#85)
 
 ## 0.24.0 (2026-11-22)
 
